@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link href='../css/styles.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <script defer src="../src/converter.js"></script>
+    <title>Color Coding</title>
+</head>
+<body>
+    <header>
+        <h1>Code Converter</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Hex To RGB</h2>
+            <div class="result">
+                <p id="rgbConversion"></p>
+            </div>
+            <form id="hexForm" method="POST">
+                <label for="hex">Hexadecimal</label>
+                <input type="text" name="hex" id="hex">
+                <input type="button" onClick="toRgb()" class="btn" value="Convert">
+            </form>
+        </section>
+        <section>
+            <h2>RGB To Hex</h2>
+            <div class="result">
+                <p id="hexConversion"></p>
+            </div>
+            <form id="rgbForm" method="POST">
+                <label for="red">Red</label>
+                <input type="number" name="red" id="red">
+                <label for="green">Green</label>
+                <input type="number" name="green" id="green">
+                <label for="blue">Blue</label>
+                <input type="number" name="blue" id="blue">
+                <input type="button" onClick="toHex()" class="btn" value="Convert">
+            </form>
+        </section>
+    </main>
+    <footer>&copy; Teemu Pallasoja</footer>
+</body>
+</html>
